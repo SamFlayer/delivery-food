@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-    <div class="container">
-    <header class="header">
+    <div class="container lock-padding">
+    <header class="header lock-padding">
         <img src="img/logo.svg" alt="Delivery Food" class="logo">
         <input type="text" class="input input-address" placeholder="Адрес доставки">
         <div class="buttons">
@@ -20,7 +20,7 @@
                 <img src="img/user.svg" class="button-icon">
                     <span class="button-text">Войти</span>
             </button>
-            <a href="#popup" class="header_popup">
+            <a href="#popup" class="header_popup popup-link">
                 <button class="button">
                     <img src="img/buying.svg" class="button-icon">
                         <span class="button-text">Корзина</span>
@@ -150,12 +150,21 @@
         </div>
     </div>
 </footer>
-    <div id="popup" class="popup">
+    <div id="popup" class="popup popup-link">
         <div class="popup_body">
             <div class="popup_content">
-                <a href="#" class="popup_close">X</a>
+                <a href="#" class="popup_close close-popup">X</a>
                 <div class="popup_title">Корзина</div>
-                <div class="popup_text">Тексты, тексты, тексты</div>
+                <div class="popup_text"><a href="#popup_2" class="popup-link">Больше</a> Тексты, тексты, тексты</div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_2" class="popup popup-link">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close close-popup">X</a>
+                <div class="popup_title">Корзина</div>
+                <div class="popup_text"><a class="popup-link" href="#popup_2">Больше</a> Тексты, тексты, тексты</div>
             </div>
         </div>
     </div>
