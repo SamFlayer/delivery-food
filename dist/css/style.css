@@ -132,11 +132,15 @@ body.lock {
 
 .card {
     background: #FFFFFF;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
     border-radius: 7px;
     overflow: hidden;
     margin-bottom: 30px;
     flex-basis: 31%;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .card-image {
